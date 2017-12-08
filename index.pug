@@ -44,5 +44,32 @@ html(lang="en")
       h1.display-4.font-weight-normal Ательє Ольги Малахової
       p.lead.font-weight-normal Ательє одягу для дорослих та дітей у м. Дніпрі
       a(href="tel:+380-67-563-9211").btn.btn-success.phone-btn Наш телефон: 067 563 9211
+    .container
+      section
+        h4.mb-4 Галерея наших робіт
+        #carousel.carousel.slide(data-ride="carousel")
+          .carousel-inner.gallery.ml-auto.mr-auto
+            .carousel-item.active
+              .row
+                .col-sm
+                  img(src="images/1.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
+                .col-sm
+                  img(src="images/2.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
+                .col-sm
+                  img(src="images/3.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
+            .carousel-item
+              .row
+                .col-sm
+                  img(src="images/4.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
+                .col-sm
+                  img(src="images/5.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
+                .col-sm
+                  img(src="images/6.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
+          a.carousel-control-prev(href="#carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+          a.carousel-control-next(href="#carousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
 
         
