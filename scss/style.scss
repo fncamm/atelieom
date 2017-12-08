@@ -1,0 +1,11 @@
+.logo {
+  font-size: 1.125rem;
+  margin-bottom: -2px;
+  &:hover {
+    color: white;
+  }
+  &-img {
+    position: relative;
+    top: 13px;
+  }
+}

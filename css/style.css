@@ -1,0 +1,10 @@
+.logo {
+  font-size: 1.125rem;
+  margin-bottom: -2px; }
+  .logo:hover {
+    color: white; }
+  .logo-img {
+    position: relative;
+    top: 13px; }
+
+/*# sourceMappingURL=style.css.map */
