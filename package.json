@@ -1,8 +1,0 @@
-{
-	"scripts": {
-		"start-live-server": "live-server",
-		"watch-scss": "scss ./scss:./css --watch",
-		"watch-pug": "pug index.pug --watch",
-		"watch": "npm run start-live-server | npm run watch-scss | npm run watch-pug"
-	}
-}
