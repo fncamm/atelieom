@@ -38,10 +38,10 @@
 }
 .carousel-control-prev {
   @media(max-width: 574px) {
-    left: -10%;
+    left: -2%;
   }
   @media(min-width: 575px) {
-    left: -10%;
+    left: -2%;
   }
   @media(min-width: 991px) {
     left: 3%;
@@ -52,10 +52,10 @@
 }
 .carousel-control-next {
   @media(max-width: 574px) {
-    right: -10%;
+    right: -2%;
   }
   @media(min-width: 575px) {
-    right: -10%;
+    right: -2%;
   }
   @media(min-width: 991px) {
     right: 3%;
@@ -111,5 +111,14 @@
     display: block;
     margin-bottom: 7px;
     color: #336ab7;
+    @media(max-width: 600px) {
+      width: 75px;
+      height: 75px;
+      background-size: 100% 100%;
+    }
   }
+  @media(max-width: 600px) {
+    bottom: 30px;
+  }
+  
 }
