@@ -66,4 +66,30 @@
     font-size: 1.2rem;
     margin-top: 1rem; }
 
+.contacts {
+  margin-top: 4rem; }
+  .contacts .route {
+    display: inline-block;
+    margin-top: 0.3rem; }
+  .contacts .schedule tr td:first-child {
+    font-weight: bold;
+    width: 2rem; }
+
+.main-footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd; }
+
+#back-top {
+  position: fixed;
+  bottom: 60px;
+  right: 3%; }
+  #back-top a {
+    background: url("../images/top.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-bottom: 7px;
+    color: #336ab7; }
+
 /*# sourceMappingURL=style.css.map */
