@@ -32,6 +32,7 @@
 }
 .carousel-control-next-icon {
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 .carousel-control-prev, .carousel-control-next {
   padding-bottom: 4rem;
