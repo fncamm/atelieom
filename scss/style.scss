@@ -8,6 +8,16 @@
     position: relative;
     top: 13px;
   }
+  @media(max-width: 347px) {
+    font-size: 0.8rem;
+  }
+}
+.jumbotron {
+  h1 {
+    @media(max-width: 347px) {
+      font-size: 2.5rem;
+    }
+  }
 }
 .phone-btn {
   padding: 0.7rem 1.4rem;
@@ -15,10 +25,20 @@
     size: 1.3rem;
     weight: normal;
   }
+  @media(max-width: 347px) {
+    font-size: 1.2rem;
+  }
+  &.iphone-5 {
+    @media(max-width: 347px) {
+      font-size: 1.1rem;
+    }
+  }
 }
 .gallery {
-  .carousel-inner {
+  position: relative;  
+  #carousel {
     max-width: 700px;
+    margin: 0 auto;
   }
   &-img {
     border-radius: 10%;
@@ -34,10 +54,11 @@
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
 }
-.carousel-control-prev, .carousel-control-next {
-  padding-bottom: 4rem;
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: calc(50% - 13px);
 }
-.carousel-control-prev {
+.carousel-prev {
   @media(max-width: 574px) {
     left: -2%;
   }
@@ -45,13 +66,13 @@
     left: -2%;
   }
   @media(min-width: 991px) {
-    left: 3%;
+    left: 11%;
   }
   @media(min-width: 1199px) {
-    left: 10%;
+    left: 17%;
   }
 }
-.carousel-control-next {
+.carousel-next {
   @media(max-width: 574px) {
     right: -2%;
   }
@@ -59,10 +80,10 @@
     right: -2%;
   }
   @media(min-width: 991px) {
-    right: 3%;
+    right: 11%;
   }
   @media(min-width: 1199px) {
-    right: 10%;
+    right: 17%;
   }
 }
 .content-block {

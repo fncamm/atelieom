@@ -8,10 +8,13 @@ html(lang="uk")
     meta(name="keywords" content="Пошив у Дніпрі, хутряне ательє, пошив плаття, пошив костюмів")
     link(type="image/png" href="favicon.png" rel="icon")
     link(rel="stylesheet" href="css/bootstrap.min.css")
+    link(rel="stylesheet" href="css/slick.css")
     link(rel="stylesheet" href="css/style.css")
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")
+    script(src="scripts/slick.min.js")
+    script(src="scripts/main.js")
     title Ательє Ольги Малахової
   body
     nav.navbar.navbar-expand-md.navbar-dark.bg-dark.p-0
@@ -43,35 +46,25 @@ html(lang="uk")
     .jumbotron.bg-white.text-center
       h1.display-4.font-weight-normal Ательє Ольги Малахової
       p.lead.font-weight-normal Ательє одягу для дорослих та дітей у м. Дніпрі
-      a(href="tel:+380-67-563-9211").btn.btn-success.phone-btn Наш телефон: 067 563 9211
+      a(href="tel:+380-67-563-9211").btn.btn-success.phone-btn.iphone-5 Наш телефон: 067 563 9211
     .container
       section.gallery
         h4.mb-4 Галерея наших робіт
-        #carousel.carousel.slide(data-ride="carousel")
-          .carousel-inner.ml-auto.mr-auto
-            .carousel-item.active
-              .row
-                .col-4
-                  img(src="images/1.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
-                .col-4
-                  img(src="images/2.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
-                .col-4
-                  img(src="images/3.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
-            .carousel-item
-              .row
-                .col-4
-                  img(src="images/4.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
-                .col-4
-                  img(src="images/5.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
-                .col-4
-                  img(src="images/6.jpg" alt="slide").d-block.w-100.img-thumbnail.gallery-img
-          a.carousel-control-prev(href="#carousel" role="button" data-slide="prev")
-            span.carousel-control-prev-icon(aria-hidden="true")
-            span.sr-only Previous
-          a.carousel-control-next(href="#carousel" role="button" data-slide="next")
-            span.carousel-control-next-icon(aria-hidden="true")
-            span.sr-only Next
-          hr.separator
+        #carousel
+          img(src="images/1.jpg" alt="slide").m-2.img-thumbnail.gallery-img
+          img(src="images/2.jpg" alt="slide").m-2.img-thumbnail.gallery-img
+          img(src="images/3.jpg" alt="slide").m-2.img-thumbnail.gallery-img
+          img(src="images/4.jpg" alt="slide").m-2.img-thumbnail.gallery-img
+          img(src="images/5.jpg" alt="slide").m-2.img-thumbnail.gallery-img
+          img(src="images/6.jpg" alt="slide").m-2.img-thumbnail.gallery-img
+              
+        a.carousel-prev(href="#carousel" role="button")
+          span.carousel-control-prev-icon(aria-hidden="true")
+          span.sr-only Previous
+        a.carousel-next(href="#carousel" role="button")
+          span.carousel-control-next-icon(aria-hidden="true")
+          span.sr-only Next
+        hr.separator
       section.content-block
         h3 Хутряне ательє
         .d-lg-flex.align-items-lg-start
@@ -128,7 +121,7 @@ html(lang="uk")
           a.route(href="https://www.google.com/maps/dir//%D0%90%D1%82%D0%B5%D0%BB%D1%8C%D0%B5+%D0%9E%D0%BB%D1%8C%D0%B3%D0%B8+%D0%9C%D0%B0%D0%BB%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B9+%28%D0%A7%D0%9F+%D0%9C%D0%B0%D0%BB%D0%B0%D1%85%D0%BE%D0%B2%D0%B0%29/data=!4m8!4m7!1m0!1m5!1m1!1s0x40dbe2f7816f4a8d:0xfe94b7c84a58e225!2m2!1d35.049687999999996!2d48.465458" target="_blank") Прокласти маршрут
           h6.mt-4 КОНТАКТ
           a(href="tel:+380-67-563-9211") 067 563 9211
-        .schedule.col-6.col-md-3.d-flex.pt-4.pt-md-0
+        .schedule.col-6.col-md-3.d-flex.pt-4.pt-md-0.pl-0
           .ml-auto.ml-md-0
             h6 ГРАФІК РОБОТИ
             table
