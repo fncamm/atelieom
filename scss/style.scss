@@ -1,11 +1,160 @@
+$breakpoint-xs-to: 574px;
+$breakpoint-small-from: $breakpoint-xs-to+1;
+$breakpoint-middle-from: 991px;
+$breakpoint-middle-to: 1199px;
+
+@mixin breakpoint($option, $value) {
+  @media($option: $value) {
+    @content;
+  }
+}
+
 .logo {
   font-size: 1.125rem;
-  margin-bottom: -2px;
+  margin-bottom: -0.0625rem;
   &:hover {
     color: white;
   }
   &-img {
     position: relative;
-    top: 13px;
+    top: 0.8125rem;
   }
+  @media(max-width: 347px) {
+    font-size: 0.8rem;
+  }
+}
+.jumbotron {
+  &-header {
+    @media(max-width: 347px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+.phone-btn {
+  padding: 0.7rem 1.4rem;
+  font: {
+    size: 1.3rem;
+    weight: normal;
+  }
+  @media(max-width: 347px) {
+    font-size: 1.2rem;
+  }
+  &.iphone-5 {
+    @media(max-width: 347px) {
+      font-size: 1.1rem;
+    }
+  }
+}
+.gallery {
+  position: relative;  
+  .carousel {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  &-img {
+    border-radius: 10%;
+  }
+  .separator {
+    margin-top: 4rem;
+  }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: calc(50% - 0.8125rem);
+}
+
+.carousel-prev {
+  @include breakpoint('max-width', $breakpoint-xs-to) {
+    left: -2%;
+  }
+  @include breakpoint('min-width', $breakpoint-small-from) {
+    left: -2%;
+  }
+  @include breakpoint('min-width', $breakpoint-middle-from) {
+    left: 11%;
+  }
+  @include breakpoint('min-width', $breakpoint-middle-to) {
+    left: 17%;
+  }
+}
+.carousel-next {
+  @include breakpoint('max-width', $breakpoint-xs-to) {
+    right: -2%;
+  }
+  @include breakpoint('min-width', $breakpoint-small-from) {
+    right: -2%;
+  }
+  @include breakpoint('min-width', $breakpoint-middle-from) {
+    right: 11%;
+  }
+  @include breakpoint('min-width', $breakpoint-middle-to) {
+    right: 17%;
+  }
+}
+.content-block {
+  .pic {
+    width: 9.37500rem;
+    object-fit: contain;
+  }
+  &:nth-of-type(n+3) {
+    margin-top: 5rem;
+  }
+}
+.attention {
+  margin-top: 4rem;
+  .message {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+.contacts {
+  margin-top: 4rem;
+  .route {
+    display: inline-block;
+    margin-top: 0.3rem;
+  }
+  .schedule {
+    tr {
+      td:first-child {
+        font-weight: bold;
+        width: 2rem;
+      }
+    }
+  }
+}
+.main-footer {
+  height: 3.75rem;
+  background-color: #f5f5f5;
+  border-top: 0.0625rem solid #ddd;
+}
+.back-top {
+  position: fixed;
+  bottom: 3.75rem;
+  right: 3%;
+  .link-to-top {
+    background: url("../images/top.png") no-repeat;
+    width: 6.25rem;
+    height: 6.25rem;
+    display: block;
+    margin-bottom: 0.4375rem;
+    color: #336ab7;
+    @include breakpoint('max-width', $breakpoint-small-from) {
+      width: 4.6875rem;
+      height: 4.6875rem;
+      background-size: 100% 100%;
+    }
+  }
+  @media(max-width: 600px) {
+    bottom: 1.875rem;
+  }
+  
 }
