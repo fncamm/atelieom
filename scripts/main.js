@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-  $('#carousel').slick({
+  $('.carousel').slick({
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
